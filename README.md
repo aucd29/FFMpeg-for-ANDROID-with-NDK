@@ -8,8 +8,12 @@ http://www.sarangnamu.net
 * android-ndk-r8d
 * cygwin
 
+## NDK Download & Setting
+* Download : http://developer.android.com/intl/ko/tools/sdk/ndk/index.html
+* Setting : http://developer.android.com/intl/ko/tools/sdk/ndk/index.html#GetStarted
+
 ##Build
 ```
 cd $prj
-ndk-build
+ndk-build -j4
 ```
