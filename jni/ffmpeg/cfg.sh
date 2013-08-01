@@ -1,0 +1,24 @@
+NDK_BIN=/cygdrive/d/ndk 
+./configure \
+--target-os=linux \
+--arch=arm \
+--enable-cross-compile \
+--cc=$NDK_BIN/bin/arm-linux-androideabi-gcc \
+--ar=$NDK_BIN/bin/arm-linux-androideabi-ar \
+--cross-prefix=$NDK_BIN/bin/arm-linux-androideabi- \
+--extra-cflags="-marm -march=armv7-a \
+-mfloat-abi=softfp \
+-mfpu=neon" \
+--extra-ldflags="-Wl,--fix-cortex-a8" \
+--disable-doc \
+--disable-ffmpeg \
+--disable-ffplay \
+--disable-ffprobe \
+--disable-ffserver \
+--disable-avdevice \
+--disable-devices \
+--disable-filters \
+--enable-network \
+--enable-protocol=udp \
+--enable-demuxer=rtsp \
+--enable-decoder=h264
