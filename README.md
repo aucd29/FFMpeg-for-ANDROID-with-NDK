@@ -1,6 +1,6 @@
 FFMpeg-for-ANDROID-with-NDK
 ===========================
-By aucd29 (cheol dong, choi) 
+By aucd29 (Burke Choi) 
 http://www.sarangnamu.net
 
 ##Environments
